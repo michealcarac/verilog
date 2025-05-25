@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.122 (w)1999-2024 BSI
+[*] Fri May 23 21:28:47 2025
+[*]
+[dumpfile] "/home/empyrea/verilog/combinational/adder/ripple/wave.vcd"
+[dumpfile_mtime] "Fri May 23 21:28:09 2025"
+[dumpfile_size] 723
+[savefile] "/home/empyrea/verilog/combinational/adder/ripple/wave.gtkw"
+[timestart] 0
+[size] 1920 874
+[pos] -1 -1
+*-2.552156 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[sst_width] 209
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 250
+@22
+TOP.ripple_adder_prim.WIDTH[31:0]
+@28
+TOP.ripple_adder_prim.i_carry
+TOP.ripple_adder_prim.i_data0[3:0]
+TOP.ripple_adder_prim.i_data1[3:0]
+TOP.ripple_adder_prim.o_sum[3:0]
+TOP.ripple_adder_prim.o_carry
+[pattern_trace] 1
+[pattern_trace] 0

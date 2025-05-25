@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.122 (w)1999-2024 BSI
+[*] Fri May 23 23:24:51 2025
+[*]
+[dumpfile] "/home/empyrea/verilog/combinational/adder/full/wave.vcd"
+[dumpfile_mtime] "Fri May 23 21:50:19 2025"
+[dumpfile_size] 570
+[savefile] "/home/empyrea/verilog/combinational/adder/full/wave.gtkw"
+[timestart] 0
+[size] 1920 874
+[pos] -461 -138
+*-2.552156 19 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[sst_width] 209
+[signals_width] 86
+[sst_expanded] 1
+[sst_vpaned_height] 250
+@28
+TOP.full_adder.i_carry
+TOP.full_adder.i_data0
+TOP.full_adder.i_data1
+TOP.full_adder.o_sum
+TOP.full_adder.o_carry
+[pattern_trace] 1
+[pattern_trace] 0

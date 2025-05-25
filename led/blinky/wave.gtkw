@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.122 (w)1999-2024 BSI
+[*] Tue May 20 21:07:21 2025
+[*]
+[dumpfile] "/home/empyrea/verilog/led/blinky/wave.vcd"
+[dumpfile_mtime] "Tue May 20 21:03:58 2025"
+[dumpfile_size] 2181
+[savefile] "/home/empyrea/verilog/led/blinky/wave.gtkw"
+[timestart] 0
+[size] 1920 874
+[pos] -461 -138
+*-4.490099 142 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[sst_width] 209
+[signals_width] 134
+[sst_expanded] 1
+[sst_vpaned_height] 250
+@22
+TOP.blinky.DIVIDER[31:0]
+TOP.blinky.counter[3:0]
+TOP.blinky.divider[3:0]
+@28
+TOP.blinky.i_clk
+TOP.blinky.i_arst
+TOP.blinky.i_en
+TOP.blinky.o_led
+[pattern_trace] 1
+[pattern_trace] 0
