@@ -1,6 +1,6 @@
-TOP              := ripple_adder_prim
-PARAMETERS       := -GWIDTH=4
-ADDITIONAL_FILES := ../../full/full_adder.v
+TOP              := shifter
+PARAMETERS       := -GWIDTH=8
+ADDITIONAL_FILES := 
 
 .PHONY: clean $(TOP) $(TOP)_flat
 

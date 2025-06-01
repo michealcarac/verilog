@@ -1,0 +1,5 @@
+[submodule "sky130"]
+	path = sky130
+	url = git@github.com:michealcarac/skywater-pdk.git
+	branch = main
+	fetchRecurseSubmodules = True
