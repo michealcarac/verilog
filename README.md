@@ -6,17 +6,47 @@ Each module directory is:
 - **Parameterized**: Widths, flags, modes, and behavior can be configured
 - **Testable**: `make` runs simulation via Verilator and generates waveforms
 
-## Submodules
+## Cloning
 
-This git repo contains a Skywater PDK (130nm) used for Synthesis.
+Two options for cloning this repo
+* Verilog Modules
+* Verilog Modules + Skywater PDK for Synthesis Benchmarks
 
-To access:
+To only get the Verilog Modules, simply clone the repo:
 ```bash
-git submodule update --recursive # (Include --init if new repo)
+git clone git@github.com:michealcarac/verilog.git
+```
+
+To get the Verilog Modules + Initialize the Skywater PDK (11GB)
+```bash
+git clone git@github.com:michealcarac/verilog.git --recurse-submodules
+```
+
+Build the Skywater PDK Timing Models
+```bash
 cd sky130
 make timing
 ```
-Note: sky130 + submodules = 35GB, 70GB after make timing modules. 
+
+## Submodule
+
+To utilize this repo as a submodule, it is advisable to follow these steps to not pull in Skywater PDK.
+
+Add to repo:
+```bash
+git submodule add git@github.com:michealcarac/verilog.git verilog
+```
+Initialize but don't init Skywater:
+```bash
+git submodule update --init verilog
+```
+Edit your .gitmodules to prevent unwanted recursive init by default
+```bash
+[submodule "verilog"]
+    path = verilog
+    url = git@github.com:michealcarac/verilog.git
+    fetchRecurseSubmodules = false
+```
 
 ## Simulation & Testing
 
