@@ -1,7 +1,7 @@
 === ripple_adder_prim ===
 
-   Number of wires:                 38
-   Number of wire bits:             51
+   Number of wires:                 59
+   Number of wire bits:             72
    Number of public wires:          26
    Number of public wire bits:      39
    Number of ports:                  5
@@ -9,13 +9,17 @@
    Number of memories:               0
    Number of memory bits:            0
    Number of processes:              0
-   Number of cells:                 24
-     $_AND_                          8
-     $_OR_                           4
-     $_XOR_                          8
+   Number of cells:                 16
      $scopeinfo                      4
+     sky130_fd_sc_hd__maj3_1         4
+     sky130_fd_sc_hd__xnor2_1        8
+
+   Area for cell type $scopeinfo is unknown!
+
+   Chip area for module '\ripple_adder_prim': 110.105600
+     of which used for sequential elements: 0.000000 (0.00%)
 
 Warnings: 1 unique messages, 1 total
-End of script. Logfile hash: d58f7d7305, CPU: user 0.03s system 0.01s, MEM: 15.86 MB peak
+End of script. Logfile hash: 325d7880f9, CPU: user 0.13s system 0.08s, MEM: 40.39 MB peak
 Yosys 0.53 (git sha1 53c22ab7c0ced80861c7536c5dae682c30fb5834, g++ 15.1.1 -O2 -flto=auto -ffat-lto-objects -fexceptions -fstack-protector-strong -m64 -march=x86-64 -mtune=generic -fasynchronous-unwind-tables -fstack-clash-protection -fcf-protection -mtls-dialect=gnu2 -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer -fPIC -O3)
-Time spent: 39% 4x read_verilog (0 sec), 27% 6x opt_expr (0 sec), ...
+Time spent: 51% 1x abc (0 sec), 24% 1x dfflibmap (0 sec), ...
