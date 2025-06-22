@@ -2,6 +2,8 @@ TOP              := ripple_adder
 PARAMETERS       := -GWIDTH=4
 ADDITIONAL_FILES := 
 
+include $(ENV_MAKEFILE)
+
 .PHONY: clean $(TOP) $(TOP)_flat
 
 clean:
@@ -14,16 +16,5 @@ $(TOP): clean
 	./obj_dir/V$(TOP)
 	gtkwave wave.vcd wave.gtkw
 
-$(TOP)_flat: clean
-	@echo "Flattening $(TOP).v"
-	@yosys -p "read_verilog $(TOP).v $(ADDITIONAL_FILES); \
-				 hierarchy -top $(TOP); \
-				 proc; opt; flatten; opt; \
-				 write_verilog -noexpr $(TOP)_flat.v; \
-				 techmap; stat" > $(TOP)_report.txt
-	@echo "Removing (* src) attributes"
-	@sed -i '/(\* src =/d' $(TOP)_flat.v
-	@echo "Stripping Report Header"
-	@sed -i '/^=== /,$$!d' $(TOP)_report.txt
 
 
