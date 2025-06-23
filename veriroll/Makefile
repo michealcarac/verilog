@@ -32,5 +32,5 @@ $(BINDIR):
 clean:
 	-rm -rf $(BUILDDIR)
 	-rm -rf $(BINDIR)
-	-rm *~
+	-rm -f *~
 
